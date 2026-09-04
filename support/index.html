@@ -1,104 +1,47 @@
-FitWheel Privacy Policy
-How FitWheel handles your information.
+FitWheel Support
+Help, questions and contact for the FitWheel iOS app.
 
-Effective date: 21 August 2026  ·  Last updated: 21 August 2026
+Last updated: 4 September 2026
 
-FitWheel is an augmented-reality app that lets you preview wheels and brake kits on your car. This policy explains what information the app collects, why, and what control you have over it. It applies to the FitWheel iOS app published by Cengine ("we", "us").
+FitWheel is an augmented-reality app that lets you preview wheels and brake kits on your own car before you buy. It is published by Cengine. If something is not working, or you have a question this page does not answer, email us — a real person reads it.
 
-The short version: You can try wheels on your car without an account — an account is only needed to save a build. We do record which wheels and brakes people try on, so we can improve the app and tell brands and retailers what is popular — but only as anonymous totals, never as a profile of you, and we never sell your personal information. No ads, no advertising networks, and no tracking across other companies' apps or websites. The camera feed used for AR is processed on your device and is never streamed to us — a photo only leaves your phone if you save a build while signed in.
+Contact: cengine.fitwheel@gmail.com
+We aim to reply within a few business days. Telling us your iPhone model and iOS version helps us answer faster.
 
-1. Information we collect
-a. Anonymous usage data (collected from everyone, including guests)
-When you first open FitWheel, the app generates a random installation ID — a UUID stored on your device. It is not your name, your Apple ID, your device's advertising identifier, or any identifier shared with other apps. It exists so we can count how many distinct people use a feature rather than how many taps happen.
+Getting started
+Placing a wheel
+Point your camera at the ground near your car and move the phone slowly from side to side so the app can find the surface. When a surface is detected, tap to place a wheel. Good, even lighting and a bit of texture on the ground both help — plain, glossy or very dark surfaces are harder to detect.
 
-Each meaningful action records an event containing:
+Changing rims and brakes
+Swipe the carousel at the bottom to try a different rim. Switch to the brake carousel to change the brake kit behind it. Changes apply to the wheel you have placed, live.
 
-the action name (for example: app opened, wheel placed, build saved, item selected);
-the wheel or brake product involved (its SKU and brand);
-where in the app the action happened (live AR, edit mode, saved-build mode);
-an internal interest score used to distinguish casual browsing from shopping intent;
-the installation ID — and not your account, name or email. Usage events are recorded against the anonymous installation ID only, and cannot be traced back to your account.
-b. Vehicle information you enter
-If you tell FitWheel what car you drive, we store the make, model and generation you selected (for example: BMW / 3 Series / G20). This is used to show correct fitment and to understand which vehicles our users own. It is saved on your device and included with the usage events described above. We do not collect your licence plate, VIN, mileage, or any other vehicle identifier.
+Saving a build
+Press and hold the shutter to freeze the shot and enter edit mode, then save. Saving needs an account — that is what backs the build up and syncs it between your devices.
 
-c. Account information (only if you choose to sign in)
-You do not need an account to open FitWheel, place wheels on your car, or try different rims and brakes. An account is required to save a build, which is also what backs it up and syncs it across your devices. FitWheel offers sign-in with Apple, Google, and (where enabled) Facebook. When you sign in, the provider gives us:
+Accounts
+Do I need an account?
+No. You can open the app, place wheels and try every rim and brake as a guest. An account is only required when you save a build.
 
-your email address (if you use Sign in with Apple's Hide My Email option, we only ever receive Apple's private relay address);
-your name, if the provider supplies it;
-a unique account ID issued by our authentication service.
-We never receive your password. Your session token is stored in the iOS Keychain on your device.
+How do I sign in?
+FitWheel uses Sign in with Apple and Google. There is no password to create or remember — we never see or store one.
 
-d. Saved builds and photos
-When you save a build, FitWheel stores a still photo captured from your camera (the frozen background of your AR scene, which typically shows your car and its surroundings), a small thumbnail, the wheel or brake you chose, its size and offset, and where each item was placed in the scene.
+How do I delete my account?
+In the app, open the options menu and choose Delete Account, then confirm. This permanently removes your account, your saved builds and any photos attached to them from our servers, and revokes the app's Sign in with Apple token. It cannot be undone. If you would rather we did it for you, email cengine.fitwheel@gmail.com from the address on your account.
 
-Saving requires an account, so every saved build is kept in two places: on your device, and in your private account in the cloud — including the photo — so it survives reinstalling the app or changing phones. Cloud copies are private to your account and are not visible to other users.
+Troubleshooting
+The camera view is black, or no surfaces are found
+Check that FitWheel has camera permission in Settings → FitWheel → Camera. If it does, try a brighter, more textured floor and move the phone slowly — AR needs to see the surface from a couple of angles before it can lock on.
 
-Until you save, nothing is uploaded. Trying wheels on, moving them around and changing rims all happen entirely on your device.
+My saved builds are missing
+Builds saved while signed in are restored when you sign back in with the same provider. Builds saved as a guest live only on that device, so deleting the app removes them.
 
-e. Camera
-FitWheel requires camera access to place virtual wheels on a real car. The live camera feed is processed entirely on your device by Apple's ARKit and is never transmitted to us or stored, except for the still photo saved as part of a build, as described above.
+Which devices are supported?
+FitWheel needs an iPhone that supports ARKit, running iOS 13 or later.
 
-2. What we do not collect
-No location data. FitWheel does not request or use GPS or any location permission.
-No health, fitness, or financial data.
-No contacts, calendar, microphone, or photo-library reading. (Saving an image to your camera roll writes only the image you asked to save.)
-No advertising identifier (IDFA) and no advertising SDKs. FitWheel does not show ads and does not participate in ad networks.
-No tracking across other companies' apps or websites, and no sale or sharing of personal information for cross-context behavioural advertising.
-3. Why we use this information
-Purpose	Data used	Legal basis (EEA/UK)
-Run the app's core features (AR placement, saving, syncing)	Camera (on device), saved builds, account ID	Performance of a contract
-Keep you signed in across sessions	Account ID, email, session token	Performance of a contract
-Understand which features and products people use, and improve the app	Installation ID, usage events, vehicle make/model	Legitimate interests
-Fix crashes and diagnose problems	Usage events	Legitimate interests
-Report anonymous, aggregated interest to wheel brands and retailers	Aggregated counts only — never your email, name, or photos	Legitimate interests
-4. Who we share it with
-We do not sell your personal information. We share it only with the service providers needed to run the app:
+Buying wheels
+FitWheel does not sell wheels and does not take payment. The app is a visualiser: it shows you how a set would look on your car. Retailer links will arrive in a later version.
 
-Supabase — our backend provider, which hosts the database, authentication, and file storage where accounts, usage events, and saved builds are kept. (supabase.com/privacy)
-Apple, Google, and Facebook — only if you choose to sign in with them. They handle the sign-in itself under their own privacy policies; we receive only the account details listed in section 1(c).
-We may also disclose information if required by law, or to protect our rights, safety, or property.
+Privacy
+What the app collects and why is set out in full in our Privacy Policy. In short: no ads, no tracking across other companies' apps, and the camera feed is processed on your device.
 
-Part of how FitWheel works as a business is telling wheel brands and retailers what people are interested in. We do this in aggregate only — for example, "42 people with a G20 3-Series viewed this wheel this month."
-
-Specifically, that means we do not give them the underlying records: no installation IDs, no per-device or per-account history, no photos, no email addresses and no names. We report only group totals, and only for groups large enough that no individual can be singled out. Because our usage events are recorded against an anonymous installation ID and are never linked to your account, these totals do not identify anyone — which is why sharing them is not a sale of personal information, and why we can say we do not sell your data.
-
-5. International transfers
-Our backend infrastructure is operated by Supabase and may store and process data on servers located outside your country of residence. Where data is transferred out of the European Economic Area or the United Kingdom, it is protected by appropriate safeguards, including the European Commission's Standard Contractual Clauses.
-
-6. How long we keep it
-Saved builds and photos — until you delete the build or your account. Deleting a build in the app also removes its cloud copy and its photo.
-Account information — until you ask us to delete your account.
-Usage events — retained for up to 24 months, after which they are deleted or aggregated. They are tied to the anonymous installation ID, never to your account.
-Data on your device — removed when you delete the app.
-7. Your choices and rights
-Regardless of where you live, you can:
-
-Try wheels on anonymously — placing and previewing wheels needs no account, and nothing you do before saving is uploaded.
-Revoke camera access at any time in iOS Settings → FitWheel. AR features will stop working, but the app will not attempt to collect camera data.
-Delete individual builds in the app, which deletes the cloud copy and photo too.
-Sign out at any time.
-Delete your account and all associated data — use Delete Account in the app's options menu. This permanently deletes your account, your saved builds and their photos, and revokes the app's access to your Apple ID if you signed in with Apple. You can also email us at the address below and we will do it for you within 30 days. Usage events are not linked to your account, so there is nothing in them to trace back to you.
-Delete the app to remove all locally stored data from your device.
-If you are in the EEA or UK, you also have the right to access, correct, delete, restrict, or object to our processing of your personal data, the right to data portability, and the right to lodge a complaint with your local supervisory authority.
-
-If you are in California, you have the right to know what personal information we collect, to request its deletion or correction, and not to be discriminated against for exercising those rights. We do not sell or share personal information as those terms are defined by the CCPA/CPRA.
-
-If you are in Thailand, you have the rights granted under the Personal Data Protection Act (PDPA), including access, rectification, erasure, restriction, objection, and withdrawal of consent.
-
-To exercise any of these rights, email cengine.fitwheel@gmail.com. We may need to verify your identity — usually by confirming the email address on your account — before acting on a request.
-
-8. Security
-Data in transit is encrypted with HTTPS/TLS. Data at rest is protected by our backend provider's encryption and by database access rules that restrict each account's builds and photos to that account. Session tokens are kept in the iOS Keychain. No system is perfectly secure, but we take reasonable measures appropriate to the sensitivity of the data we hold.
-
-9. Children
-FitWheel is not directed to children under 13 (or the minimum age of digital consent in your country), and we do not knowingly collect personal information from them. If you believe a child has provided us with personal information, contact us and we will delete it.
-
-10. Changes to this policy
-If we change this policy we will update the "Last updated" date above, and for significant changes we will give notice in the app before the change takes effect.
-
-11. Contact
-Questions, requests, or complaints:
-Cengine — cengine.fitwheel@gmail.com
-
-FitWheel is a product of Cengine. This policy covers the FitWheel iOS application only.
+FitWheel is a product of Cengine. This page covers the FitWheel iOS application only.
