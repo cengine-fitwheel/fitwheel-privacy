@@ -78,7 +78,7 @@
 
   <h1>FitWheel Privacy Policy</h1>
   <p class="lede">How FitWheel handles your information.</p>
-  <p class="meta"><strong>Effective date:</strong> 21 August 2026 &nbsp;·&nbsp; <strong>Last updated:</strong> 21 August 2026</p>
+  <p class="meta"><strong>Effective date:</strong> 21 August 2026 &nbsp;·&nbsp; <strong>Last updated:</strong> 7 November 2026</p>
 
   <p>FitWheel is an augmented-reality app that lets you preview wheels and brake kits on
   your car. This policy explains what information the app collects, why, and what control
@@ -144,7 +144,25 @@
   <p>Until you save, nothing is uploaded. Trying wheels on, moving them around and changing rims
   all happen entirely on your device.</p>
 
-  <h3>e. Camera</h3>
+  <h3>e. Coffee purchases (only if you buy coffee)</h3>
+  <p>FitWheel sells <strong>coffees</strong>, an in-app currency that unlocks recolouring or a sticker
+  on a saved build. Buying requires an account. Purchases are made through Apple's App Store: Apple
+  takes the payment, and we never see your card or any other payment details.</p>
+  <p>For each purchase we store Apple's transaction identifier, the pack you bought, and your coffee
+  balance with a history of coffees added and spent — all linked to your account, so your coffees
+  follow you to a new phone and a purchase can never be counted twice. To make that work, the app
+  attaches your FitWheel account identifier to the purchase, so Apple's signed confirmation shows
+  which account it belongs to.</p>
+
+  <h3>f. Recolouring and stickers</h3>
+  <p>When you recolour a saved build or add a sticker to it for the first time, the build's saved
+  photo (described in 1(d)) is sent to Google's Gemini API, which returns a lighting map of the
+  car's body. The lighting map is stored with your build in your private account. The colour you
+  pick is applied on your device.</p>
+  <p>The image you choose for a sticker comes from your photo library, which FitWheel opens only when
+  you tap to pick one. That image stays on your device and is not uploaded.</p>
+
+  <h3>g. Camera</h3>
   <p>FitWheel requires camera access to place virtual wheels on a real car. The live camera feed
   is processed entirely on your device by Apple's ARKit and is never transmitted to us or stored,
   except for the still photo saved as part of a build, as described above.</p>
@@ -152,9 +170,11 @@
   <h2>2. What we do not collect</h2>
   <ul>
     <li><strong>No location data.</strong> FitWheel does not request or use GPS or any location permission.</li>
-    <li><strong>No health, fitness, or financial data.</strong></li>
-    <li><strong>No contacts, calendar, microphone, or photo-library reading.</strong> (Saving an image to
-      your camera roll writes only the image you asked to save.)</li>
+    <li><strong>No health or fitness data, and no payment details.</strong> Apple handles all payments;
+      we only receive the purchase record described in 1(e).</li>
+    <li><strong>No contacts, calendar, or microphone.</strong> FitWheel opens your photo library only when
+      you pick a sticker image, and reads only the image you pick. Saving an image to your camera roll
+      writes only the image you asked to save.</li>
     <li><strong>No advertising identifier (IDFA) and no advertising SDKs.</strong> FitWheel does not
       show ads and does not participate in ad networks.</li>
     <li><strong>No tracking across other companies' apps or websites</strong>, and no sale or sharing
@@ -169,6 +189,8 @@
       </thead>
       <tbody>
         <tr><td>Run the app's core features (AR placement, saving, syncing)</td><td>Camera (on device), saved builds, account ID</td><td>Performance of a contract</td></tr>
+        <tr><td>Sell and deliver coffees, and make sure a purchase is credited exactly once</td><td>Apple transaction ID, pack bought, coffee balance and history, account ID</td><td>Performance of a contract</td></tr>
+        <tr><td>Recolour a build or add a sticker</td><td>The build's saved photo and its lighting map</td><td>Performance of a contract</td></tr>
         <tr><td>Keep you signed in across sessions</td><td>Account ID, email, session token</td><td>Performance of a contract</td></tr>
         <tr><td>Understand which features and products people use, and improve the app</td><td>Installation ID, usage events, vehicle make/model</td><td>Legitimate interests</td></tr>
         <tr><td>Fix crashes and diagnose problems</td><td>Usage events</td><td>Legitimate interests</td></tr>
@@ -184,6 +206,11 @@
     <li><strong>Supabase</strong> — our backend provider, which hosts the database, authentication,
       and file storage where accounts, usage events, and saved builds are kept.
       (<a href="https://supabase.com/privacy" rel="noopener">supabase.com/privacy</a>)</li>
+    <li><strong>Google (Gemini API)</strong> — only when you recolour a build or add a sticker to it. Google
+      receives that build's saved photo and returns a lighting map, processing it on our behalf under
+      its API terms. (<a href="https://ai.google.dev/gemini-api/terms" rel="noopener">ai.google.dev/gemini-api/terms</a>)</li>
+    <li><strong>Apple (App Store)</strong> — if you buy coffee. Apple processes the payment under its own
+      privacy policy; we receive only the purchase record described in 1(e).</li>
     <li><strong>Apple, Google, and Facebook</strong> — only if you choose to sign in with them. They
       handle the sign-in itself under their own privacy policies; we receive only the account details
       listed in section 1(c).</li>
@@ -201,8 +228,8 @@
   information, and why we can say we do not sell your data.</p>
 
   <h2>5. International transfers</h2>
-  <p>Our backend infrastructure is operated by Supabase and may store and process data on servers
-  located outside your country of residence. Where data is transferred out of the European Economic
+  <p>Our backend infrastructure is operated by Supabase, and recolour photos are processed by Google;
+  both may store and process data on servers located outside your country of residence. Where data is transferred out of the European Economic
   Area or the United Kingdom, it is protected by appropriate safeguards, including the European
   Commission's Standard Contractual Clauses.</p>
 
@@ -211,6 +238,8 @@
     <li><strong>Saved builds and photos</strong> — until you delete the build or your account.
       Deleting a build in the app also removes its cloud copy and its photo.</li>
     <li><strong>Account information</strong> — until you ask us to delete your account.</li>
+    <li><strong>Coffee balance and purchase history</strong> — while your account exists; deleted with your
+      account. Apple keeps its own record of the purchase under its policy.</li>
     <li><strong>Usage events</strong> — retained for up to 24 months, after which they are deleted or
       aggregated. They are tied to the anonymous installation ID, never to your account.</li>
     <li><strong>Data on your device</strong> — removed when you delete the app.</li>
@@ -227,7 +256,7 @@
     <li><strong>Sign out</strong> at any time.</li>
     <li><strong>Delete your account and all associated data</strong> — use <em>Delete Account</em> in the
       app's options menu. This permanently deletes your account, your saved builds and their photos,
-      and revokes the app's access to your Apple ID if you signed in with Apple. You can also email
+      your coffee balance and purchase history (unused coffees are lost), and revokes the app's access to your Apple ID if you signed in with Apple. You can also email
       us at the address below and we will do it for you within 30 days. Usage events are not linked
       to your account, so there is nothing in them to trace back to you.</li>
     <li><strong>Delete the app</strong> to remove all locally stored data from your device.</li>
