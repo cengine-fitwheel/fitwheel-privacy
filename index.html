@@ -78,7 +78,7 @@
 
   <h1>FitWheel Privacy Policy</h1>
   <p class="lede">How FitWheel handles your information.</p>
-  <p class="meta"><strong>Effective date:</strong> 21 August 2026 &nbsp;·&nbsp; <strong>Last updated:</strong> 7 November 2026</p>
+  <p class="meta"><strong>Effective date:</strong> 21 August 2026 &nbsp;·&nbsp; <strong>Last updated:</strong> 10 November 2026</p>
 
   <p>FitWheel is an augmented-reality app that lets you preview wheels and brake kits on
   your car. This policy explains what information the app collects, why, and what control
@@ -93,7 +93,8 @@
     your personal information. No ads, no advertising networks, and no tracking across other
     companies' apps or websites. The camera feed used for AR is processed on your device and is
     never streamed to us — a photo only leaves your phone if you save a build while signed
-  in, and is sent to Google only if you recolour that build or add a sticker to it. Coffee
+  in, is sent to Google only if you recolour that build or add a sticker to it, and is kept
+  with a report only if you report a recolour and leave "Include the photo" on. Coffee
   purchases go through Apple; we never see your payment details.</p>
   </div>
 
@@ -164,7 +165,19 @@
   <p>The image you choose for a sticker comes from your photo library, which FitWheel opens only when
   you tap to pick one. That image stays on your device and is not uploaded.</p>
 
-  <h3>g. Camera</h3>
+  <h3>g. Recolour reports</h3>
+  <p>If a recolour comes out wrong, you can tap <strong>Report</strong> in the colour picker. A report
+  contains the problems you pick (for example "Windows or wheels painted"), any note you type, the
+  colour you chose, the app version, your account identifier and the build it is about. If you leave
+  <strong>Include the photo</strong> on (it is on by default), we also keep a copy of that build's
+  saved photo, its lighting map and the reference image Google made of it, so we can see what went
+  wrong. Turn it off and only the problems and your note are sent.</p>
+  <p>We use reports to look into the problem, to improve the recolour feature, and to give that build
+  one free retry. Reports and their images are stored in private storage that only FitWheel can read,
+  and each report is emailed to our developer inbox, with links to its images that expire after
+  7 days, through our email provider, Resend.</p>
+
+  <h3>h. Camera</h3>
   <p>FitWheel requires camera access to place virtual wheels on a real car. The live camera feed
   is processed entirely on your device by Apple's ARKit and is never transmitted to us or stored,
   except for the still photo saved as part of a build, as described above.</p>
@@ -193,6 +206,7 @@
         <tr><td>Run the app's core features (AR placement, saving, syncing)</td><td>Camera (on device), saved builds, account ID</td><td>Performance of a contract</td></tr>
         <tr><td>Sell and deliver coffees, and make sure a purchase is credited exactly once</td><td>Apple transaction ID, pack bought, coffee balance and history, account ID</td><td>Performance of a contract</td></tr>
         <tr><td>Recolour a build or add a sticker</td><td>The build's saved photo and its lighting map</td><td>Performance of a contract</td></tr>
+        <tr><td>Look into a recolour you report, improve the recolour feature, and give the build its free retry</td><td>The report (problems picked, note, colour, app version, account ID, build) and, if you include it, the build's photo, lighting map and reference image</td><td>Legitimate interests</td></tr>
         <tr><td>Keep you signed in across sessions</td><td>Account ID, email, session token</td><td>Performance of a contract</td></tr>
         <tr><td>Understand which features and products people use, and improve the app</td><td>Installation ID, usage events, vehicle make/model</td><td>Legitimate interests</td></tr>
         <tr><td>Fix crashes and diagnose problems</td><td>Usage events</td><td>Legitimate interests</td></tr>
@@ -211,6 +225,9 @@
     <li><strong>Google (Gemini API)</strong> — only when you recolour a build or add a sticker to it. Google
       receives that build's saved photo and returns a lighting map, processing it on our behalf under
       its API terms. (<a href="https://ai.google.dev/gemini-api/terms" rel="noopener">ai.google.dev/gemini-api/terms</a>)</li>
+    <li><strong>Resend</strong> — our email provider, only when you send a recolour report. It delivers the
+      report to our developer inbox: the report's details and time-limited links to its images.
+      (<a href="https://resend.com/legal/privacy-policy" rel="noopener">resend.com/legal/privacy-policy</a>)</li>
     <li><strong>Apple (App Store)</strong> — if you buy coffee. Apple processes the payment under its own
       privacy policy; we receive only the purchase record described in 1(e).</li>
     <li><strong>Apple, Google, and Facebook</strong> — only if you choose to sign in with them. They
@@ -239,6 +256,9 @@
   <ul>
     <li><strong>Saved builds and photos</strong> — until you delete the build or your account.
       Deleting a build in the app also removes its cloud copy and its photo.</li>
+    <li><strong>Recolour reports</strong> — until you delete your account. A copy of a photo you included
+      in a report stays with that report even if you later delete the build; deleting your account
+      removes all of your reports and their images.</li>
     <li><strong>Account information</strong> — until you ask us to delete your account.</li>
     <li><strong>Coffee balance and purchase history</strong> — while your account exists; deleted with your
       account. Apple keeps its own record of the purchase under its policy.</li>
@@ -255,9 +275,10 @@
     <li><strong>Revoke camera access</strong> at any time in iOS <em>Settings → FitWheel</em>. AR features
       will stop working, but the app will not attempt to collect camera data.</li>
     <li><strong>Delete individual builds</strong> in the app, which deletes the cloud copy and photo too.</li>
+    <li><strong>Leave the photo out of a report</strong> by turning off <em>Include the photo</em> before you send it.</li>
     <li><strong>Sign out</strong> at any time.</li>
     <li><strong>Delete your account and all associated data</strong> — use <em>Delete Account</em> in the
-      app's options menu. This permanently deletes your account, your saved builds and their photos,
+      app's options menu. This permanently deletes your account, your saved builds and their photos, your recolour reports and their images,
       your coffee balance and purchase history (unused coffees are lost), and revokes the app's access to your Apple ID if you signed in with Apple. You can also email
       us at the address below and we will do it for you within 30 days. Usage events are not linked
       to your account, so there is nothing in them to trace back to you.</li>
